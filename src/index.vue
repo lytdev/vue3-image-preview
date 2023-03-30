@@ -10,13 +10,15 @@
       />
       <div class="preview-footer" @click.stop="preventDefault">
         <ul class="preview-footer-tools">
-          <li v-if="imgList.length" @click="handleCut('last')"><img src="./assets/arrow-left.png" alt="" /></li>
-          <li @click="handleRotate('left')"><img src="./assets/refresh-left.png" alt="" /></li>
-          <li @click="imgScale = 1"><img src="./assets/real-size.png" alt="" /></li>
+          <li v-if="imgList.length&&imgList.length>1" @click="handleCut('last')"><img src="./assets/arrow-left.png" alt="上一张" /></li>
+          <li @click="handleRotate('left')"><img src="./assets/refresh-left.png" alt="左旋转" /></li>
+          <li @click="imgScale = 1"><img src="./assets/real-size.png" alt="恢复尺寸" /></li>
+          <li @click="handerClickScale(1)"><img src="./assets/click-scale-plus.png" alt="放大" /></li>
+          <li @click="handerClickScale(2)"><img src="./assets/click-scale-minus.png" alt="缩小" /></li>
           <li @click="handleRotate('right')"><img src="./assets/refresh-right.png" alt="" /></li>
-          <li v-if="imgList.length" @click="handleCut('next')"><img src="./assets/arrow-right.png" alt="" /></li>
+          <li v-if="imgList.length&&imgList.length>1" @click="handleCut('next')"><img src="./assets/arrow-right.png" alt="下一张" /></li>
         </ul>
-        <div class="preview-footer-thumbs" v-if="imgList.length">
+        <div class="preview-footer-thumbs" v-if="imgList.length&&imgList.length>1">
           <div v-for="(item, index) in imgList" :id="'thumb-item-' + index" :key="index" class="thumb-item" :class="{ active: currentIndex === index }" @click="handleClickThumb(item, index)">
             <img :src="imgKey ? item[imgKey] : item" />
           </div>
@@ -138,6 +140,13 @@ export default {
         this.imgScale += 0.1
       } else if ((e.wheelDelta < 0 || e.detail < 0) && this.imgScale > 0.5) {
         this.imgScale += -0.1
+      }
+    },
+    handerClickScale(type){
+      if(type===1){
+        this.imgScale += 0.1
+      }else{
+        this.imgScale -= 0.1
       }
     },
     // 按下鼠标开始移动图片
