@@ -11,17 +11,17 @@
 
 如果对您有帮助，麻烦给个Star！
 
-[github]: https://github.com/zhangchuqiang/vue3-preview-image
+[github]: https://github.com/lytdev/vue3-image-preview
 
 ## npm安装
 ```bash
-npm install vue3-preview-image -S
+npm install vue3-preview-image-plus -S
 ```
 
 ## 在main.js引入
 ```javascript
-import vue3PreviewImage from 'vue3-preview-image'
-app.use(vue3PreviewImage)
+import vue3PreviewImagePlus from 'vue3-preview-image-plus'
+app.use(vue3PreviewImagePlus)
 ```
 
 ## 调用方式
@@ -36,7 +36,7 @@ this.$preview(current,list,key)
 ```
 组合式api中引入方法调用
 ```javascript
-import { preview } from 'vue3-preview-image'
+import { preview } from 'vue3-preview-image-plus'
 preview(current,list,key)
 ```
 | 参数       | 说明                                                         | 类型   |
@@ -47,7 +47,7 @@ preview(current,list,key)
 
 关闭预览
 ```javascript
-import { closePreview } from 'vue3-preview-image'
+import { closePreview } from 'vue3-preview-image-plus'
 closePreview()
 ```
 
@@ -67,7 +67,7 @@ closePreview()
 </template>
 
 <script>
-import { preview } from 'vue3-preview-image' // 使用setup组合式api时引入方法调用
+import { preview } from 'vue3-preview-image-plus' // 使用setup组合式api时引入方法调用
 export default {
   data() {
     return {

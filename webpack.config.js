@@ -64,7 +64,7 @@ module.exports = (env, { mode }) => {
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, './index.html'),
         filename: 'index.html',
-        title: 'Vue3PreviewImage',
+        title: 'Vue3ImagePreviewPlus',
       }),
       new FriendlyErrorsPlugin({
         compilationSuccessInfo: {
@@ -78,8 +78,8 @@ module.exports = (env, { mode }) => {
     config.entry = path.resolve(__dirname, './src/index.js')
     config.output = {
       path: path.resolve(__dirname, './lib'),
-      filename: 'vue3-preview-image.min.js',
-      library: 'Vue3PreviewImage',
+      filename: 'vue3-image-preview-plus.min.js',
+      library: 'Vue3ImagePreviewPlus',
       libraryTarget: 'umd',
       umdNamedDefine: true,
     }

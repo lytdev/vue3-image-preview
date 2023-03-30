@@ -1,6 +1,6 @@
 {
-  "name": "vue3-image-preview",
-  "version": "1.1.9",
+  "name": "vue3-image-preview-plus",
+  "version": "1.2.0",
   "desription": "基于vue3的图片预览插件",
   "keywords": [
     "vue",
@@ -11,7 +11,7 @@
   "homepage": "https://github.com/lytdev/vue3-image-preview",
   "author": "liuyuantao",
   "private": false,
-  "main": "lib/vue3-image-preview.min.js",
+  "main": "lib/vue3-image-preview-plus.min.js",
   "files": [
     "lib"
   ],
