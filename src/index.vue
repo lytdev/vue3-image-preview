@@ -4,7 +4,7 @@
       <img
         class="preview-content"
         :src="currentImg"
-        :style="{ top: imgTop + 'px', left: imgLeft + 'px', transform: `scale(${imgScale}) rotateZ(${imgRotate}deg)` }"
+        :style="{ top: imgTop + 'px', left: imgLeft + 'px', transform: `scale(${imgScale}) rotateZ(${imgRotate}deg)`,background:'#fff' }"
         @click.stop="preventDefault"
         @mousedown="handleMoveStart"
       />

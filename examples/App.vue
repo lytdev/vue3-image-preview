@@ -15,9 +15,9 @@ import { preview } from '../src/index' // 使用setup组合式api时引入方法
 export default {
   data() {
     return {
-      url: 'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg',
+      url: 'https://wqbook.wqxuetang.com/deep/epub/read/3239724/11/0/Images/Figure-0214-0227.svg',
       list: [
-        'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg',
+        'https://wqbook.wqxuetang.com/deep/epub/read/3239724/11/0/Images/Figure-0214-0227.svg',
         'https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg',
         'https://fuss10.elemecdn.com/2/11/6535bcfb26e4c79b48ddde44f4b6fjpeg.jpeg',
         'https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg',
